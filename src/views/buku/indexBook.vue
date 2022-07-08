@@ -67,6 +67,22 @@ export default {
 
         })
 
+        //method delete
+        function postDelete(id) {
+                    
+        //delete data post by ID
+        axios.delete(`http://localhost:3000/api/buku/${id}`)
+        .then(() => {
+                    
+            //splice posts 
+            bukus.value.splice(bukus.value.indexOf(id), 1);
+
+            }).catch(error => {
+                console.log(error.response.data)
+            })
+
+        }
+
         //return
         return {
             bukus
