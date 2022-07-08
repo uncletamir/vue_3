@@ -68,7 +68,7 @@ export default {
         })
 
         //method delete
-        function postDelete(id) {
+        function bukusDelete(id) {
                     
         //delete data post by ID
         axios.delete(`http://localhost:3000/api/buku/${id}`)
@@ -85,7 +85,8 @@ export default {
 
         //return
         return {
-            bukus
+            bukus,
+            bukusDelete
         }
 
     }
