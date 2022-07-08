@@ -91,7 +91,7 @@ export default {
             let pengarang_buku = buku.pengarang_buku
             let tahun = buku.tahun
 
-            axios.post('http://localhost:8000/api/buku', {
+            axios.post('http://localhost:3000/api/buku', {
                 kategori_id: kategori_id,
                 judul_buku: judul_buku,
                 penerbit_buku: penerbit_buku,
